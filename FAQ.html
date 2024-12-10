@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lucas Reig Weidgraaf">
+    <title>Pick&Go</title>
+    <link rel="stylesheet" href="./styles/styles_plantilla.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+
+            <!-- Menú Páginas -->
+            <label class="burger" for="burger">
+                <input type="checkbox" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <div class="menu-items">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./products.html">Products</a></li>
+                        <li><a href="./AbUs.html">About Us</a></li>
+                        <li><a href="./FAQ.html">FAQ</a></li>
+                        <li><a href="./Help.html">Ayuda</a></li>
+                    </ul>
+                </div>
+            </label>
+
+<!-- Logo de la empresa -->            
+            <div>
+                <a href="./index.html"><img src="./Index_Items/logo.png" alt="Logo" class="logo"></a>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="main_FAQ" id="#section1">
+
+        <div class="left-aside">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-btn">></label>
+            <nav class="menu">
+                <ul>
+                    <li><p class="subtitle" style="font-size: 35px; text-decoration: underline;">Contenidos</p></li>
+                    <li><a href="#section1" class="title">Preguntas frecuentes</a></li>
+                    <li><a href="#section2" class="title">¡Preguntanos!</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <section class="FAQ_title"><h1>Preguntas Frecuentes</h1></section>
+        <section class="content-FAQ">
+
+            <div class="FAQ-ask">
+                <p class="subtitle">¿Dónde nos encontramos?</p>
+                <p class="asnwr">De momento nos encontramos en Av. Europa nº150.</p>
+                
+            </div>
+            <div class="FAQ-ask">
+
+                <p class="subtitle">¿Qué valores nos guían?</p>
+                <p class="asnwr">Nuestra misión es ofrecer productos de calidad, apoyar a la comunidad y fomentar la sostenibilidad en todas nuestras acciones.</p>
+                
+            </div>
+            <div class="FAQ-ask">
+                <p class="subtitle">¿Cómo seleccionamos nuestros productos?</p>
+                <p class="asnwr">Seleccionamos nuestros productos con un enfoque en calidad, frescura y responsabilidad ambiental.</p>
+            </div>
+            <div class="FAQ-ask">
+
+                <p class="subtitle">¿Qué diferencia a nuestro supermercado de otros en la comunidad?</p>
+                <p class="asnwr">Nos diferencia nuestro enfoque en el servicio al cliente, la calidad de nuestros productos y el apoyo a la economía local.</p>
+                
+            </div>
+            <div class="FAQ-ask">
+
+                <p class="subtitle">¿Qué impacto tiene nuestra empresa en la comunidad local?</p>
+                <p class="asnwr">Nos comprometemos con la comunidad local a través de proyectos de apoyo a empresas locales y la participación en eventos comunitarios.</p>
+                
+            </div>
+            <div class="FAQ-ask">
+
+                <p class="subtitle">¿Cual es nuestra finalidad?</p>
+                <p class="asnwr">Ofrecer la mayor rapidez de compra para nuestros usuarios y una sleección de productos más comoda y eficiente</p>
+                
+            </div>
+        </section>
+
+        <fieldset class="FAQ-form"> <!--Caja que establece las credenciales-->
+            <legend>¡No dudes en dejar una pregunta!</legend>
+            
+            <label for="title">Nombre completo</label><br>
+            <input type="text" name="Usuario" id="usuario" required><br><br>
+            
+            <label for="mail">Correo electrónico</label><br>
+            <input type="email" name="mail" id="mail" required><br><br>
+            
+            <label for="title">Escribe aquí tu pregunta</label><br>
+            <input type="text" name="Usuario" id="usuario" required><br><br>
+            <button type="submit">Enviar</button>
+        </fieldset>
+        
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-left">
+            <ul class="footer-list">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./products.html">Products</a></li>
+                <li><a href="./AbUs.html">About Us</a></li>
+                <li><a href="./FAQ.html">FAQ</a></li>
+            </ul>
+        </div>
+        <p class="footer-list" style="text-align: center;;">2024 Pick&Go. All rights reserved.</p>
+        <div>
+            <ul class="footer-list">
+                <li><a href="www.instagram.com"><img src="https://img.icons8.com/?size=100&id=32292&format=png&color=000000" class="mini-logo" alt="Instagram"></a></li>
+                <li><a href="www.tiktok.com"><img src="https://img.icons8.com/?size=100&id=84521&format=png&color=000000" class="mini-logo" alt="Tik Tok"></a></li>
+                <li><a href="www.youtube.com"><img src="https://img.icons8.com/?size=100&id=37325&format=png&color=000000" class="mini-logo" alt="youtbe"></a></li>
+                <li><a href="www.x.com"><img src="https://img.icons8.com/?size=100&id=111056&format=png&color=000000" alt="Youtube" class="mini-logo"></a></li>
+            </ul>
+        </div>
+        
+    </footer>
+
+</body>
+</html>

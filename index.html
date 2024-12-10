@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lucas Reig Weidgraaf">
+    <title>Pick&Go</title>
+    <link rel="stylesheet" href="./styles/styles_plantilla.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <!-- Menú Páginas -->
+            <label class="burger" for="burger">
+            <input type="checkbox" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+                <div class="menu-items">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./products.html">Products</a></li>
+                        <li><a href="./AbUs.html">About Us</a></li>
+                        <li><a href="./FAQ.html">FAQ</a></li>
+                        <li><a href="./Help.html">Ayuda</a></li>
+                    </ul>
+                </div>
+            </label>
+<!-- Logo de la empresa -->            
+            <div >
+                <a href="./index.html"><img src="./Index_Items/logo.png" alt="Logo" class="logo"></a>
+            </div>
+        </div>  
+
+    </header>
+<!--Nav Lateral-->
+    <main class="main">
+        <div class="left-aside">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-btn">></label>
+            <nav class="menu">
+                <ul>
+                    <li><p class="subtitle" style="font-size: 35px; text-decoration: underline;">Contenidos</p></li>
+                    <li><a href="#section1" class="title">Compra Online</a></li>
+                    <li><a href="#section2" class="title">Aumentando</a></li>
+                    <li><a href="#section3" class="title">Frescura Garantizada</a></li>
+                    <li><a href="#section4" class="title">Ecológicos</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <section>
+<!-- Portada -->
+            <div class="portada">
+                <h1 style="font-size: 64px; padding: 10px;">Empieza a ahorrar tiempo <br>con Pick&Go</h1>
+            </div>
+                <h1 class="buton-title">¡No dudes, empieza ya!</h1>
+                <a class="button" href="./products.html">¡Compra ya!</a>
+                <!-- Apartado Compra Online -->
+            <div id="section1"class="index-content-apartado1" >
+                <div style="flex: 1; padding-right: 20px;">
+                    <p class="title">Compra Online</p>
+                    <p class="subtitle">
+                        Haz tu pedido online para recogerlo luego en nuestra tienda física 
+                         sin prisa alguna para poder disfrutar al máximo posible tu día.
+                    </p>
+                </div>
+                <div style="flex: 1;">
+                    <img src="./Index_Items/app-movil.png" alt="inicio-apartado1" class="inicio-img-1">
+                </div>
+            </div>
+
+<!-- Apartado Clientes -->
+            <div class="index-content-apartado2" id="section2">
+                <div style="flex: 1;">
+                    <img src="./Index_Items/cajero-cliente.png" alt="inicio-apartado2" class="inicio-img-2" width="550px">
+                </div>
+                <div style="flex: 1; padding-left: 20px;">
+                    <p class="title">Aumentando</p>
+                    <p class="subtitle">
+                        Cada día, esta empresa se preocupa en cómo mejorar tanto la calidad de los productos
+                        como en la comodidad de nuestros clientes.
+                    </p>
+                </div>
+            </div>
+
+<!-- Apartado Frescura -->
+            <div class="index-content-apartado1" id="section3">
+                <div style="flex: 1; padding-right: 20px;">
+                    <p class="title">Frescura Garantizada</p>
+                    <p class="subtitle">Nos aseguramos de que los productos que recibes estén siempre frescos y de la mejor calidad. <br><br>Desde frutas y verduras hasta carnes y lácteos, seleccionamos cuidadosamente cada artículo para que disfrutes.</p>
+                </div>
+<!--Foto-->
+                <div style="flex: 1;">
+                    <img src="./Index_Items/Frescura.png" alt="Foto3">
+                </div>
+            </div>
+
+<!-- Apartado Ecológicos -->
+<!--Foto-->
+            <div class="index-content-apartado2" id="section4">
+               <div style="flex: 1;">
+                   <img src="./Index_Items/Ecologic.png" alt="inicio-apartado2" style="padding: 30px 30px 30px 0px;" width="350px" >
+               </div>
+               <div style="flex: 1;">
+                   <p class="title">Ecológicos</p>
+                   <p class="subtitle">Recibe tu productos embolsados o empacados con materiales 100% ecológicos para proteger el medio ambiente</p>
+               </div>
+            </div>
+           
+        </section>
+    </main>
+
+
+<!-- Pie de página -->
+   <!-- Pie de página -->
+<footer>
+    <div class="footer-left">
+        <ul class="footer-list">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <li><a href="./AbUs.html">About Us</a></li>
+            <li><a href="./FAQ.html">FAQ</a></li>
+        </ul>
+    </div>
+    <p class="footer-list" style="text-align: center;;">2024 Pick&Go. All rights reserved.</p>
+
+    <ul class="footer-list">
+        <li><a href="www.instagram.com"><img src="https://img.icons8.com/?size=100&id=32292&format=png&color=000000" class="mini-logo" alt="Instagram"></a></li>
+        <li><a href="www.tiktok.com"><img src="https://img.icons8.com/?size=100&id=84521&format=png&color=000000" class="mini-logo" alt="Tik Tok"></a></li>
+        <li><a href="www.youtube.com"><img src="https://img.icons8.com/?size=100&id=37325&format=png&color=000000" class="mini-logo" alt="youtbe"></a></li>
+        <li><a href="www.x.com"><img src="https://img.icons8.com/?size=100&id=111056&format=png&color=000000" alt="Youtube" class="mini-logo"></a></li>
+    </ul>
+</footer>
+
+</body>
+</html>

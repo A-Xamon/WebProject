@@ -1,0 +1,238 @@
+@import "./AU.css";
+@import "./FaQ.css";
+@import "./products.css";
+@import "./header.css";
+@import "./footer.css";
+@import "./landing_page.css";
+
+/*Estilos generales de la página*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  caret-color: transparent;
+}
+/*El cuerpo del texto*/
+body {
+  font-family: Arial, sans-serif;
+}
+
+/*burguer boton del index sacado de internet*/
+
+.burger {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  cursor: pointer;
+  top: 40px;
+  left: 20px;
+}
+
+.burger input {
+  display: none;
+}
+
+.burger span {
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: black;
+  left: 10;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 5px;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 28px;
+  left: 5px;
+}
+
+.burger input:checked ~ .menu-items {
+  display: block;
+}
+
+.logo {
+  position: absolute;
+  width: 120px;
+  top: 10px;
+  right: 20px;
+}
+
+.menu-items {
+  position: relative;
+  top: 40px; /*la distancia entre la parte de arriba y la caja*/
+  background-color: rgb(81, 80, 80);
+  padding: 10px;
+  width: 140px;
+  display: none;
+  z-index: 1000; 
+}
+
+.menu-items ul {
+  list-style: none;
+}
+
+.menu-items ul li {
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.menu-items ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.menu-items ul li:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+  background-color: #939393;
+}
+/*Fin header*/
+/* Cuerpo/contenido de la página */
+.main {
+  margin-top: 160px;
+  display: flex;
+  flex: 1;
+}
+.left-aside{
+  text-align: center;
+}
+
+.menu-btn {
+  margin-top: 400px;
+  display: block;
+  background-color: #444;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20x;
+  border-radius: 50px;
+  position: fixed;
+  display: flex;
+  z-index: 3000;
+}
+
+.menu-btn:hover{
+  background-color: #585858;
+  color: white;
+  font-style:italic;
+}
+
+
+.menu-toggle {
+  display: none;
+}
+
+nav.menu {
+  background-color: #979797;
+  color: #444;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: -200px;
+  min-height: 100%;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: left 0.3s ease;
+  z-index: 1001;
+
+  
+}
+
+.menu-toggle:checked + .menu-btn + nav.menu {
+  left: 0;
+}
+
+nav.menu ul {
+  list-style: none;
+}
+
+nav.menu ul li {
+  margin: 20px 0;
+}
+
+nav.menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  align-content: left;
+}
+
+nav.menu ul li a:hover {
+  text-decoration: underline;
+}
+
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: white;
+}
+
+.title {
+  font-size: 45px;
+  font-weight: bold;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  body {
+      font-size: 14px;
+  }
+
+  .main {
+      flex-direction: column;
+  }
+
+  .left-aside {
+      display: none; /* Ocultar barra lateral en móviles */
+  }
+
+  .content {
+      padding: 10px;
+  }
+
+  header {
+      height: auto;
+      padding: 10px;
+  }
+
+  .burger {
+      top: 10px;
+      left: 10px;
+  }
+  .logo{
+    width: 60px;
+  }
+}

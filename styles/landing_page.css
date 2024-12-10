@@ -1,0 +1,101 @@
+/* Portada Section */
+.portada {
+  max-height: 100%;
+  width: 100%;
+  position: relative;
+  align-content: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+      1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+  font-size: 30px;
+  background-image: url('../Index_Items/portada.png');
+  background-size: auto;
+  background-position: center;
+  padding-left: 10%;
+  top: -50px;
+}
+
+/* Buttons */
+.buton-title {
+  margin-top: 50px;
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+  transition: text-size 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.button {
+  display: block;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  width: 100%;
+  max-width: 200px;
+  margin: 30px auto;
+}
+.button:hover {
+  background-color: #ff0000;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Content Layout */
+.index-content-apartado1, .index-content-apartado2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15%;
+}
+.index-content-apartado1 img, .index-content-apartado2 img {
+  display: inline;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  max-height: 500px;
+}
+.index-content-apartado1 img:hover, .index-content-apartado2 img:hover {
+  transform: scale(1.1);
+}
+.index-content-apartado1 {
+  margin-top: 60px;
+}
+.index-content-apartado2 {
+  background-color: #ddd;
+  margin: 150px;
+  border-radius: 50px;
+}
+.title:hover {
+  transform: scale(1.1);
+}
+.subtitle {
+  font-size: 25px;
+  padding-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .index-content-apartado1, .index-content-apartado2 {
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+      width: 100%;
+      margin-left: 0;
+  }
+  .index-content-apartado1 img, .index-content-apartado2 img {
+      max-width: 100%;
+      height: auto;
+  }
+  .portada {
+      background-size: cover;
+      text-align: center;
+      padding: 20px;
+  }
+}
